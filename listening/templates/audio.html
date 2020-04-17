@@ -1,0 +1,1 @@
+<input type="{{ widget.type }}" name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %} {% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}" style="display:none" {% endif %}> <audio controls="controls" src="{{ widget.value }}"></audio>
