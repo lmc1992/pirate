@@ -18,6 +18,7 @@ class SentenceAdmin(ImportExportModelAdmin):
     list_display = ('id', 'audio_play', 'content_play')
     formfield_overrides = {AudioField: {'widget': AudioWiget}}
     resource_class = SentenceResource
+    ordering = ('id', )
 
 
 admin.site.register(Sentence, SentenceAdmin)
