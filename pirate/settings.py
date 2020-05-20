@@ -25,11 +25,10 @@ SECRET_KEY = '0l9wwn-ifvkbw)6hwxoc+_z_(!56ou1lum44g-k7_ugdorg%xv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['144.34.220.6']
 
 
 # Application definition
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 INSTALLED_APPS = [
@@ -124,32 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-CKEDITOR_CONFIGS = {
-    # django-ckeditor默认使用default配置
-    'default': {
-        # 编辑器宽度自适应
-        'width':'auto',
-        'height':'250px',
-        # tab键转换空格数
-        'tabSpaces': 4,
-        # 工具栏风格
-        'toolbar': 'Custom',
-        # 工具栏按钮
-        'toolbar_Custom': [
-            # 表情 代码块
-            ['Smiley', 'CodeSnippet'],
-            # 字体风格
-            ['Bold', 'Italic', 'Underline', 'RemoveFormat', 'Blockquote'],
-            # 字体颜色
-            ['TextColor', 'BGColor'],
-            # 链接
-            ['Link', 'Unlink'],
-            # 列表
-            ['NumberedList', 'BulletedList'],
-            # 最大化
-            ['Maximize']
-        ],
-        # 加入代码块插件
-        'extraPlugins': ','.join(['codesnippet']),
-    }
-}
+

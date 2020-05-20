@@ -13,7 +13,7 @@ class AudioField(models.URLField):
 
 class Sentence(models.Model):
     audio = AudioField()
-    content = RichTextField()
+    content = RichTextField(help_text='标记错误（红）发音问题（黄）')
 
     def audio_play(self):
         return format_html(
